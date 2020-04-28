@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>@jnjosh’s internet weblog - internet weblog</title>
-    <link>http://mysite.com/http://mysite.com/</link>
+    <link>https://willey-l.github.io/https://willey-l.github.io/</link>
     <description>All entries in internet weblog on internet weblog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
     <lastBuildDate>Tue, 21 Apr 2020 15:51:57 +0800</lastBuildDate>
-    <atom:link href="http://mysite.com/" rel="self" type="application/rss+xml" />
+    <atom:link href="https://willey-l.github.io/" rel="self" type="application/rss+xml" />
     
       
     
