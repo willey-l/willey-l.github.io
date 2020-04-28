@@ -1,87 +1,129 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    
+<html lang="en-us">
+  <head>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="chrome=1">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josh Johnson">
+    <meta name="description" content="This is my blog, read it and enjoy.">
+    <meta name="generator" content="Hugo 0.69.0" />
 
-<title>
-    Tags - My New Hugo Site
-</title>
+    
+    <title>Tags &middot; @jnjosh’s internet weblog</title>
 
-
-<link href="/tags/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/sass/style.sass" integrity="" crossorigin="anonymous" media="screen">
-
-
-
-
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content=""/>
-
-<meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://example.org/tags/" />
-
+    <link rel="stylesheet" href="http://mysite.com/css/weblog.css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/css/lightgallery.min.css" type="text/css" />
+    
 
 
     
+	<link href="http://mysite.com/index.xml" rel="alternate" type="application/rss+xml" title="internet weblog" />
+	
+  </head>
+  <body class="site">
+
+<header>
+  <nav>
+    <h1><a href="/">@jnjosh</a>’s internet weblog.</h1>
+    <div class="menu">
+		
+			
+			<ul>
+				
+				<li>
+					<a href="/posts/">Posts</a>
+					
+						<a href="/posts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+					
+				</li>
+				
+				<li>
+					<a href="/microposts/">Microposts</a>
+					
+						<a href="/microposts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+					
+				</li>
+				
+				<li>
+					<a href="/photos/">Photos</a>
+					
+						<a href="/photos/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+					
+				</li>
+				
+				<li><a href="/about">About</a></li>
+			</ul>
+		
+    </div>
+  </nav>
+</header>
+
+
+<main class="content list">
+   
+
+
+
+
+
+
+<div class="pagination">
+  
+
+  
+
+  
+</div>
+
+
+</main>
+
+
+<footer>
+  <div class="footer_text">
+      <div>
+        <h3>Hi, <a href="/about">I'm Josh</a></h3>
+        <p>
+          Here you can place a short bio about yourself. Place a `bio.html` file in your
+project directory under `layout/partials`. That will override this message.
+
+        </p>
+      </div>
+      
+      <div>
+          <h3><a href="https://www.flickr.com/photos/87151163@N00/">Photo Stream</a></h3>
+          <div id="photos"></div>
+        </div>
+      </div>
+      
+  </div>
+
+  
+    <div class="footer_copyright">
+      &copy; 2020 <a href="/about">Josh Johnson</a>
+       - Made in Durham, NC
+    </div>
+  
+</footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/js/lightgallery-all.min.js" charset="utf-8"></script>
+    <script src="/js/weblog.js" charset="utf-8"></script>
+    
+
+    <script type="text/javascript">
+
+  
+  $(function() {
+    
+    $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?id=87151163@N00&format=json&jsoncallback=?", function(data) {
+      iweblog.application.displayImages(data, 8);
+    });
+  });
+
+</script>
 
     
-    
-    
-    <title>
-        
-        Tags
-        
-    </title>
-</head>
-
-<body>
-    
-    
-    <header class="wrap flex-container">
-        <h1>Tags</h1>
-    </header>
-    
-    <main class="wrap">
-        
-<article class="flex-container">
-    
-</article>
-<nav role="navigation">
-    <ul>
-        
-    </ul>
-</nav>
-
-
-        
-        
-        
-    </main>
-    
-    <footer class="flex-container footer"></footer>
-    
-    
-</body>
-
+  </body>
 </html>
+
